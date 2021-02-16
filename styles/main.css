@@ -1237,7 +1237,11 @@ li {
     float: left;
 }
 
-.site-footer  .spacer{
+.site-footer .spacer {
     margin: 0 5px;
+}
+
+.rss {
+    display: none;
 }
     
