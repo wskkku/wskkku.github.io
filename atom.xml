@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wskkku.github.io</id>
     <title>黑白真不行</title>
-    <updated>2021-02-16T13:52:09.582Z</updated>
+    <updated>2021-02-16T14:28:03.602Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wskkku.github.io"/>
     <link rel="self" href="https://wskkku.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://wskkku.github.io/images/avatar.png</logo>
     <icon>https://wskkku.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 黑白真不行</rights>
+    <entry>
+        <title type="html"><![CDATA[Python</>]]></title>
+        <id>https://wskkku.github.io/post/pythonlessgreater/</id>
+        <link href="https://wskkku.github.io/post/pythonlessgreater/">
+        </link>
+        <updated>2021-02-16T14:27:16.000Z</updated>
+        <summary type="html"><![CDATA[<p>Python基础</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Python基础</p>
+<!-- more -->
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[JavaScript</>]]></title>
         <id>https://wskkku.github.io/post/ghj-de-feng-ge-he-feng-ge-he-feng-ge-he-feng-ge-he-feng-ge-he-feng-ge-he/</id>
