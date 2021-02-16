@@ -1244,4 +1244,35 @@ li {
 .rss {
     display: none;
 }
+
+.post-detail .post .post-title {
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.post-detail .post .post-title, .post-detail .post .post-info {
+    text-align: center;
+}
+
+.post-detail .post .post-content-wrapper {
+    padding: 10px 4%;
+    /* margin-bottom: 10px; */
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.post-detail .post .post-content-wrapper p {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.post-detail .post .post-content-wrapper p:first-child {
+    border-bottom: 2px solid #EAEAEA;
+}
+
+.post-feature-image {
+    display: none;
+}
     
