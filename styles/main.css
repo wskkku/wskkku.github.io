@@ -1220,4 +1220,24 @@ body .main {
 }
 
 /* 内容container end */
+
+/* #333333 */
+
+/* 页脚start */
+
+.site-footer {
+    /* background-color: pink; */
+}
+
+li {
+    list-style: none;
+}
+
+.site-footer li {
+    float: left;
+}
+
+.site-footer  .spacer{
+    margin: 0 5px;
+}
     
