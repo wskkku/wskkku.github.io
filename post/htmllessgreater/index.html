@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>HTML&lt;/&gt; | RoKey !RoKey !</title>
-<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1613572669416">
+<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1613576552025">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://wskkku.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="HTML&lt;/&gt; | RoKey !RoKey ! - Atom Feed" href="https://wskkku.github.io/atom.xml">
@@ -34,7 +34,7 @@ AVAILABLE NOW
       <div class="main-content">
         <div class="site-header">
   <a href="https://wskkku.github.io">
-  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1613572669416" alt="">
+  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1613576552025" alt="">
   </a>
   <h1 class="site-title">
     RoKey !RoKey !
@@ -98,7 +98,7 @@ AVAILABLE NOW
                 2021-02-17
               </span>
               <span>
-                4 min read
+                5 min read
               </span>
               
                 <a href="https://wskkku.github.io/tag/BUHtxhEXI/" class="post-tag">
@@ -230,13 +230,14 @@ button:hover::after {
 <div class="templet">
     <div class="templet-inner">
         <div class="ios-button">
-            <label for="toggle">
+            <label for="toggle" style="cursor: pointer;" >
                 <input type="checkbox" id="toggle">
                 <span></span>
             </label>
         </div>
     </div>
 </div>
+<br>
 <pre><code>html
 
 &lt;label for=&quot;toggle&quot;&gt;
@@ -318,6 +319,83 @@ input[type=&quot;checkbox&quot;]:checked:active + span::after {
   span {
     background-color: var(--color-dark-grey);
   }
+}
+</code></pre>
+<p>3.分裂文字效果</p>
+<div class="templet-inner">
+    <div class="ftext-button">
+    <div class="a">
+        <div class="b" style="--i:-30">ROI</div>
+        <div class="c" style="--i:30">ROI</div>
+        <a href="#" class="d">关注/follow</a>
+    </div>
+   </div>
+ </div>
+<br>
+<!-- more -->
+<pre><code>html
+
+&lt;div class=&quot;a&quot;&gt;
+    &lt;div class=&quot;b&quot; style=&quot;--i:-30&quot;&gt;ROI&lt;/div&gt;
+    &lt;div class=&quot;c&quot; style=&quot;--i:30&quot;&gt;ROI&lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;d&quot;&gt;关注/follow&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code>css
+
+body {
+    background-color: rgb(189, 207, 255);
+    display: flex;
+    justify-content: center;
+}
+
+.a {
+    position: relative;
+    /* top: 250px; */
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+ .c,  .b {
+    font: 900 100px '';
+    line-height: 150px;
+    position: absolute;
+    color: brown;
+    top: 0;
+    /* 使文字上下移动时有0.4s的过渡效果 */
+    transition: .4s;
+}
+
+.c {
+    /* 裁剪文字的上半部分，括号里的四个值分别是
+    top，right，bottom，left */
+    clip-path: inset(49% 0 0 0);
+}
+
+.b {
+    /* 裁剪文字的下半部分 */
+    clip-path: inset(1% 0 50% 0);
+}
+
+.a:hover .b,  .a:hover .c {
+    /* 让--i为30的向上移动30px，-30的向下移动30px
+    这样子就能空出60px留给中间的超链接 */
+    top: calc(var(--i)*1px);
+}
+
+.a:hover .d {
+    opacity: 1;
+}
+
+.d {
+    text-decoration: none;
+    color: cyan;
+    font: 600 30px '';
+    line-height: 150px;
+    opacity: 0;
+    transition: .3s;
 }
 </code></pre>
 
