@@ -999,7 +999,8 @@ td {
       pre {
   float: left;
   overflow-y: auto;
-  height: 300px;
+  max-height: 300px;
+  min-width: 330px;
   width: 49%;
   margin-right: 2%;
   margin-bottom: 2%;
@@ -1299,6 +1300,7 @@ li {
 /* 内容页 start */
 
 .post-detail .post .post-title {
+    min-width: 350px;
     margin-bottom: 10px;
     border-radius: 25px;
     background-color: #fff;
@@ -1310,6 +1312,7 @@ li {
 
 .post-detail .post .post-content-wrapper {
     padding: 10px 4%;
+    min-width: 350px;
     /* margin-bottom: 10px; */
     border-radius: 25px;
     background-color: #fff;
