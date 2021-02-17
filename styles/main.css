@@ -997,17 +997,17 @@ td {
       }
     
       pre {
-  float: left;
-  overflow-y: auto;
-  max-height: 300px;
-  min-width: 330px;
-  width: 49%;
-  margin-right: 2%;
-  margin-bottom: 2%;
+    float: left;
+    overflow-y: auto;
+    max-height: 300px;
+    min-width: 330px;
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 2%;
 }
 
 pre:nth-child(2n) {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 * {
@@ -1020,10 +1020,10 @@ body {
 }
 
 /* 
-.main {
-    margin: 0;
-    padding: 0;
-} */
+  .main {
+      margin: 0;
+      padding: 0;
+  } */
 
 body .main {
     max-width: 1210px;
@@ -1221,6 +1221,7 @@ body .main {
 .post-container .post .post-title {
     display: inline-block;
     max-width: 755px;
+    min-width: 350px;
     z-index: 10;
     padding: 0;
     margin: 1vw 0;
@@ -1277,8 +1278,6 @@ body .main {
 
 /* 内容container end */
 
-/* #333333 */
-
 /* 页脚start */
 
 li {
@@ -1298,6 +1297,10 @@ li {
 }
 
 /* 内容页 start */
+
+.post-detail .post {
+    padding: 0;
+}
 
 .post-detail .post .post-title {
     min-width: 350px;
@@ -1427,4 +1430,5 @@ li {
         transform: translate(0);
     }
 }
+
     
