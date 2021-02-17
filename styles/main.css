@@ -1029,7 +1029,7 @@ body .main {
 .main .main-content .site-header {
     overflow: hidden;
     position: relative;
-    height: 50vh;
+    height: 55vh;
     min-width: 350px;
     padding: 18vh 0;
     margin-top: 50px;
@@ -1156,28 +1156,44 @@ body .main {
 
 .post-container .post {
     position: relative;
-    height: 250px;
+    height: 33vh;
+    min-width: 302px;
     padding: 10px 4%;
     margin-bottom: 15px;
     border-radius: 25px;
     background-color: #fff;
 }
 
+.post-container .post a:first-child {
+    position: relative;
+    z-index: 10;
+    /* background-color: pink; */
+}
+
 .post-container .post .post-info {
     position: absolute;
     bottom: 0;
+    max-height: 20px;
+    max-width: 90%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, .7);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .post-container .post .post-feature-image {
     position: absolute;
-    right: 0; 
+    right: 0;
     top: 50%;
-    width: 334px;
-    height: 250px;
-    margin-left: 600px;
+    width: 23vw;
+    height: 33vh;
+    min-width: 302px;
+    margin-left: 100px;
     padding: 0;
-    border-radius: 0 25px 25px 0;
+    border-radius: 25px 25px 25px 25px;
     transform: translateY(-50%);
+    background: no-repeat center;
     background-size: 100% auto;
     transition: all .5s;
 }
@@ -1190,9 +1206,11 @@ body .main {
 .post-container .post .post-title {
     display: inline-block;
     max-width: 755px;
+    z-index: 10;
     padding: 0;
-    margin: 24px 0;
+    margin: 1vw 0;
     border-bottom: 2px dotted #EAEAEA;
+    background-color: rgba(255, 255, 255, .7);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1205,9 +1223,12 @@ body .main {
 }
 
 .post-container .post .post-abstract {
+    position: relative;
     max-width: 755px;
+    z-index: 10;
     padding: 0;
     margin-top: 15px;
+    background-color: rgba(255, 255, 255, .7);
     word-break: break-all;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -1220,8 +1241,9 @@ body .main {
     display: inline-block;
     background-color: #fff;
     height: 18px;
+    z-index: 10;
     padding: 0 7px;
-    margin-left: 7px;
+    /* margin-left: 7px; */
     border: 1px solid #06f;
     border-radius: 9px;
     line-height: 16px;
@@ -1240,10 +1262,6 @@ body .main {
 /* #333333 */
 
 /* 页脚start */
-
-.site-footer {
-    /* background-color: pink; */
-}
 
 li {
     list-style: none;
