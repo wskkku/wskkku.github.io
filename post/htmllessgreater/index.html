@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>HTML&lt;/&gt; | RoKey !RoKey !</title>
-<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1613571619479">
+<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1613572669416">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://wskkku.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="HTML&lt;/&gt; | RoKey !RoKey ! - Atom Feed" href="https://wskkku.github.io/atom.xml">
@@ -16,13 +16,15 @@
 1.赛博朋克风格按钮
 
 
+
 AVAILABLE NOW
+
 
 
 
 *************html部分*************
 
-        &lt;button&gt;AVAILABLE NOW&lt;/button..." />
+        &lt;button&gt;AVAILABLE NOW&lt;/butt..." />
     <meta name="keywords" content="HTML,编程" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -32,7 +34,7 @@ AVAILABLE NOW
       <div class="main-content">
         <div class="site-header">
   <a href="https://wskkku.github.io">
-  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1613571619479" alt="">
+  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1613572669416" alt="">
   </a>
   <h1 class="site-title">
     RoKey !RoKey !
@@ -96,7 +98,7 @@ AVAILABLE NOW
                 2021-02-17
               </span>
               <span>
-                2 min read
+                4 min read
               </span>
               
                 <a href="https://wskkku.github.io/tag/BUHtxhEXI/" class="post-tag">
@@ -118,7 +120,9 @@ AVAILABLE NOW
 <p>1.赛博朋克风格按钮<br>
 <div class="templet"><br>
 <div class="templet-inner"><br>
+<div class="cyber-button"><br>
 <button>AVAILABLE NOW</button><br>
+</div><br>
 </div><br>
 </div></p>
 <!-- more -->
@@ -219,6 +223,101 @@ button:hover::after {
         clip-path: var(--slice-1);
         transform: translate(0);
     }
+}
+</code></pre>
+<!-- more -->
+<p>2.ios开关</p>
+<div class="templet">
+    <div class="templet-inner">
+        <div class="ios-button">
+            <label for="toggle">
+                <input type="checkbox" id="toggle">
+                <span></span>
+            </label>
+        </div>
+    </div>
+</div>
+<pre><code>html
+
+&lt;label for=&quot;toggle&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;toggle&quot;&gt;
+  &lt;span&gt;&lt;/span&gt;
+&lt;/label&gt;
+</code></pre>
+<pre><code>css
+
+:root {
+  --button-width: 500px;
+  --button-height: 295px;
+  --toggle-diameter: 255px;
+  --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+  --toggle-shadow-offset: 10px;
+  --toggle-wider: 333px;
+  --color-grey: #E9E9E9;
+  --color-dark-grey: #39393D;
+  --color-green: #30D158;
+}
+
+span {
+  display: inline-block;
+  width: var(--button-width);
+  height: var(--button-height);
+  background-color: var(--color-grey);
+  border-radius: calc(var(--button-height) / 2);
+  position: relative;
+  transition: .3s all ease-in-out;
+}
+
+span::after {
+  content: '';
+  display: inline-block;
+  width: var(--toggle-diameter);
+  height: var(--toggle-diameter);
+  background-color: #fff;
+  border-radius: calc(var(--toggle-diameter) / 2);
+  position: absolute;
+  top: var(--button-toggle-offset);
+  transform: translateX(var(--button-toggle-offset));
+  box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, .10);
+  transition: .3s all ease-in-out;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+input[type=&quot;checkbox&quot;]:checked + span {
+  background-color: var(--color-green);
+}
+
+input[type=&quot;checkbox&quot;]:checked + span::after {
+  transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+  box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, .10);
+}
+
+input[type=&quot;checkbox&quot;] {
+  display: none;
+}
+
+input[type=&quot;checkbox&quot;]:active + span::after {
+  width: var(--toggle-wider);
+}
+
+input[type=&quot;checkbox&quot;]:checked:active + span::after {
+  transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+}
+
+@media(prefers-color-scheme: dark) {
+  body {
+    background-color: #1C1C1E;
+  }
+  
+  span {
+    background-color: var(--color-dark-grey);
+  }
 }
 </code></pre>
 

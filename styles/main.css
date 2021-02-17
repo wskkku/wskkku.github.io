@@ -1337,7 +1337,7 @@ li {
 
 /* 1.赛博朋克风格按钮 start */
 
-.templet-inner {
+.templet-inner .cyber-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1345,7 +1345,7 @@ li {
     background-color: #F8F005;
 }
 
-.templet-inner button, .templet-inner button::after {
+.templet-inner .cyber-button button, .templet-inner .cyber-button button::after {
     width: 380px;
     height: 86px;
     font-size: 36px;
@@ -1359,7 +1359,7 @@ li {
     position: relative;
 }
 
-.templet-inner button::after {
+.templet-inner .cyber-button button::after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
     --slice-2: inset(50% -6px 30% 0);
@@ -1378,7 +1378,7 @@ li {
     clip-path: var(--slice-0);
 }
 
-.templet-inner button:hover::after {
+.templet-inner .cyber-button button:hover::after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
 }
@@ -1431,4 +1431,81 @@ li {
 }
 
 /* 1.赛博朋克风格按钮 end */
+
+/* 2.ios开关 start */
+
+:root {
+    --button-width: 400px;
+    --button-height: 230px;
+    --toggle-diameter: 200px;
+    --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+    --toggle-shadow-offset: 10px;
+    --toggle-wider: 333px;
+    --color-grey: #E9E9E9;
+    --color-dark-grey: #39393D;
+    --color-green: #30D158;
+}
+
+.templet-inner .ios-button span {
+    display: inline-block;
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--color-grey);
+    border-radius: calc(var(--button-height) / 2);
+    position: relative;
+    transition: .3s all ease-in-out;
+}
+
+.templet-inner .ios-button span::after {
+    content: '';
+    display: inline-block;
+    width: var(--toggle-diameter);
+    height: var(--toggle-diameter);
+    background-color: #fff;
+    border-radius: calc(var(--toggle-diameter) / 2);
+    position: absolute;
+    top: var(--button-toggle-offset);
+    transform: translateX(var(--button-toggle-offset));
+    box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, .10);
+    transition: .3s all ease-in-out;
+}
+
+.templet-inner .ios-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.templet-inner .ios-button input[type="checkbox"]:checked+span {
+    background-color: var(--color-green);
+}
+
+.templet-inner .ios-button input[type="checkbox"]:checked+span::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+    box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, .10);
+}
+
+.templet-inner .ios-button input[type="checkbox"] {
+    display: none;
+}
+
+.templet-inner .ios-button input[type="checkbox"]:active+span::after {
+    width: var(--toggle-wider);
+}
+
+.templet-inner .ios-button input[type="checkbox"]:checked:active+span::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+}
+
+@media(prefers-color-scheme: dark) {
+    .templet-inner .ios-button {
+        background-color: #1C1C1E;
+    }
+    .templet-inner .ios-button span {
+        background-color: var(--color-dark-grey);
+    }
+}
+
+/* 2.ios开关 end */
     
