@@ -1171,7 +1171,6 @@ body .main {
 .post-container .post {
     position: relative;
     height: 250px;
-    min-width: 302px;
     padding: 10px 4%;
     margin-bottom: 15px;
     border-radius: 25px;
@@ -1221,7 +1220,6 @@ body .main {
 .post-container .post .post-title {
     display: inline-block;
     max-width: 755px;
-    min-width: 350px;
     z-index: 10;
     padding: 0;
     margin: 1vw 0;
@@ -1303,7 +1301,7 @@ li {
 }
 
 .post-detail .post .post-title {
-    min-width: 350px;
+    min-width: 302px;
     margin-bottom: 10px;
     border-radius: 25px;
     background-color: #fff;
@@ -1315,7 +1313,7 @@ li {
 
 .post-detail .post .post-content-wrapper {
     padding: 10px 4%;
-    min-width: 350px;
+    min-width: 302px;
     /* margin-bottom: 10px; */
     border-radius: 25px;
     background-color: #fff;
@@ -1430,5 +1428,4 @@ li {
         transform: translate(0);
     }
 }
-
     
