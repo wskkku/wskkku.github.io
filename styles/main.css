@@ -1156,7 +1156,7 @@ body .main {
 
 .post-container .post {
     position: relative;
-    height: 33vh;
+    height: 250px;
     min-width: 302px;
     padding: 10px 4%;
     margin-bottom: 15px;
@@ -1188,7 +1188,7 @@ body .main {
     right: 0;
     top: 50%;
     width: 23vw;
-    height: 33vh;
+    height: 250px;
     min-width: 302px;
     margin-left: 100px;
     padding: 0;
