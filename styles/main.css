@@ -1194,7 +1194,7 @@ body .main {
     padding: 0;
     border-radius: 25px 25px 25px 25px;
     transform: translateY(-50%);
-    background: no-repeat center;
+    background:center;
     background-size: 100% auto;
     transition: all .5s;
 }
