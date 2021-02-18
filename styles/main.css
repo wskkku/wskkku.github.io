@@ -1335,9 +1335,31 @@ li {
 
 /* 内容页 end */
 
-.templet-inner{
+/* 标签页start */
+.tags-container{
+    padding: 32px 0;
+    background-color: #fff;
+    border-radius: 25px;
+}
+.tags-container .tag {
+    background-color: #fff;
+    border: 1px solid #06f;
+    border-radius: 20px;
+    color: #06f;
+    font-weight: 600;
+}
+
+.tags-container .tag:hover {
+    background-color: #06f;
+    color: #fff;
+}
+
+/* 标签页 end */
+
+.templet-inner {
     overflow: hidden;
 }
+
 /* 1.赛博朋克风格按钮 start */
 
 .templet-inner .cyber-button {
