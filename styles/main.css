@@ -1332,11 +1332,13 @@ li {
 /* 内容页 end */
 
 /* 标签页start */
-.tags-container{
+
+.tags-container {
     padding: 32px 0;
     background-color: #fff;
     border-radius: 25px;
 }
+
 .tags-container .tag {
     background-color: #fff;
     border: 1px solid #06f;
@@ -1348,6 +1350,28 @@ li {
 .tags-container .tag:hover {
     background-color: #06f;
     color: #fff;
+}
+
+.toc-container .markdownIt-TOC {
+    position: sticky;
+    top: 82px;
+    width: 200px;
+    font-size: 12px;
+    list-style: none;
+    padding-left: 0;
+    padding: 16px 8px;
+    padding-top: 0;
+}
+
+.toc-container .markdownIt-TOC:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 32px;
+    bottom: 0;
+    width: 2px;
+    background-color: #06f;
+    opacity: 0.5;
 }
 
 /* 标签页 end */
