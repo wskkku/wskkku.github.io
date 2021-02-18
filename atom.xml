@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wskkku.github.io</id>
     <title>RoKey! RoKey!</title>
-    <updated>2021-02-18T11:22:53.693Z</updated>
+    <updated>2021-02-18T11:23:42.518Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wskkku.github.io"/>
     <link rel="self" href="https://wskkku.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://wskkku.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, RoKey! RoKey!</rights>
     <entry>
-        <title type="html"><![CDATA[HTML</>移动端]]></title>
+        <title type="html"><![CDATA[HTML<移动端/>]]></title>
         <id>https://wskkku.github.io/post/htmllessgreateryi-dong-duan/</id>
         <link href="https://wskkku.github.io/post/htmllessgreateryi-dong-duan/">
         </link>
