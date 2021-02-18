@@ -1335,6 +1335,9 @@ li {
 
 /* 内容页 end */
 
+.templet-inner{
+    overflow: hidden;
+}
 /* 1.赛博朋克风格按钮 start */
 
 .templet-inner .cyber-button {
