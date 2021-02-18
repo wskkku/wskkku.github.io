@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wskkku.github.io</id>
     <title>RoKey! RoKey!</title>
-    <updated>2021-02-18T04:50:57.421Z</updated>
+    <updated>2021-02-18T11:09:04.470Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wskkku.github.io"/>
     <link rel="self" href="https://wskkku.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://wskkku.github.io/images/avatar.png</logo>
     <icon>https://wskkku.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, RoKey! RoKey!</rights>
+    <entry>
+        <title type="html"><![CDATA[HTML</>移动端]]></title>
+        <id>https://wskkku.github.io/post/htmllessgreateryi-dong-duan/</id>
+        <link href="https://wskkku.github.io/post/htmllessgreateryi-dong-duan/">
+        </link>
+        <updated>2021-02-18T10:39:10.000Z</updated>
+        <summary type="html"><![CDATA[<p>移动端基础</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>移动端基础</p>
+<!-- more -->
+<pre><code>&lt;meta name=&quot;viewport&quot;
+        content=&quot;width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no&quot;&gt;
+        content=&quot;宽度设置，初始缩放比，最大缩放比，最小缩放比，用户是否可以缩放&quot;
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[HTML</>]]></title>
         <id>https://wskkku.github.io/post/htmllessgreater/</id>
@@ -20,22 +36,21 @@
 ]]></summary>
         <content type="html"><![CDATA[<p>HTML按钮风格</p>
 <!-- more -->
-<p>1.赛博朋克风格按钮<br>
-<div class="templet"><br>
-<div class="templet-inner"><br>
-<div class="cyber-button"><br>
-<button>AVAILABLE NOW</button><br>
-</div><br>
-</div><br>
-</div></p>
-<!-- more -->
-<pre><code>*************html部分*************
-
-&lt;button&gt;AVAILABLE NOW&lt;/button&gt;
+<h2 id="1赛博朋克风格按钮">1.赛博朋克风格按钮</h2>
+<pre><code>        &lt;div class=&quot;templet&quot;&gt;
+            &lt;div class=&quot;templet-inner&quot;&gt;
+            &lt;div class=&quot;cyber-button&quot;&gt;
+              &lt;button&gt;AVAILABLE NOW&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
 </code></pre>
-<pre><code>*************css部分*************
-
-body {
+<!-- more -->
+<p><strong>html</strong></p>
+<pre><code>&lt;button&gt;AVAILABLE NOW&lt;/button&gt;
+</code></pre>
+<p><strong>css</strong></p>
+<pre><code>body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,8 +143,7 @@ button:hover::after {
     }
 }
 </code></pre>
-<!-- more -->
-<p>2.ios开关</p>
+<h2 id="2ios开关">2.ios开关</h2>
 <div class="templet">
     <div class="templet-inner">
         <div class="ios-button">
@@ -140,17 +154,15 @@ button:hover::after {
         </div>
     </div>
 </div>
-<br>
-<pre><code>html
-
-&lt;label for=&quot;toggle&quot;&gt;
+<!-- more -->
+<p><strong>html</strong></p>
+<pre><code>&lt;label for=&quot;toggle&quot;&gt;
   &lt;input type=&quot;checkbox&quot; id=&quot;toggle&quot;&gt;
   &lt;span&gt;&lt;/span&gt;
 &lt;/label&gt;
 </code></pre>
-<pre><code>css
-
-:root {
+<p><strong>css</strong></p>
+<pre><code>:root {
   --button-width: 500px;
   --button-height: 295px;
   --toggle-diameter: 255px;
@@ -224,7 +236,7 @@ input[type=&quot;checkbox&quot;]:checked:active + span::after {
   }
 }
 </code></pre>
-<p>3.分裂文字效果</p>
+<h2 id="3分裂文字效果">3.分裂文字效果</h2>
 <div class="templet-inner">
     <div class="ftext-button">
     <div class="a">
@@ -234,19 +246,16 @@ input[type=&quot;checkbox&quot;]:checked:active + span::after {
     </div>
    </div>
  </div>
-<br>
 <!-- more -->
-<pre><code>html
-
-&lt;div class=&quot;a&quot;&gt;
+<p><strong>html</strong></p>
+<pre><code>&lt;div class=&quot;a&quot;&gt;
     &lt;div class=&quot;b&quot; style=&quot;--i:-30&quot;&gt;ROI&lt;/div&gt;
     &lt;div class=&quot;c&quot; style=&quot;--i:30&quot;&gt;ROI&lt;/div&gt;
     &lt;a href=&quot;#&quot; class=&quot;d&quot;&gt;关注/follow&lt;/a&gt;
 &lt;/div&gt;
 </code></pre>
-<pre><code>css
-
-body {
+<p><strong>css</strong></p>
+<pre><code>body {
     background-color: rgb(189, 207, 255);
     display: flex;
     justify-content: center;

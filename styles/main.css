@@ -997,12 +997,8 @@ td {
       }
     
       pre {
-    float: left;
     overflow-y: auto;
     max-height: 300px;
-    min-width: 282px;
-    width: 48%;
-    margin-right: 2%;
     margin-bottom: 2%;
 }
 
