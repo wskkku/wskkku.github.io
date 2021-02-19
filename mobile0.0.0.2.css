@@ -195,7 +195,6 @@ body .main {
 
 .post-container .post .post-feature-image:hover {
     background-size: 140% auto;
-    transform: translateY(-50%);
 }
 
 .post-container .post .post-title {
