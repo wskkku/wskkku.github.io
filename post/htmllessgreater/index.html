@@ -5,9 +5,11 @@
 <title>
   HTML+CSS&lt;按钮风格/&gt; | RoKey! RoKey!
 </title>
-<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1613739875209">
+<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1613741241077">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://wskkku.github.io/styles/main.css">
+<link href='http://cdn.repository.webfont.com/webfonts/nomal/143324/47031/602fb7daf629d805acfb9654.css' rel='stylesheet'
+  type='text/css' />
 <link rel="alternate" type="application/atom+xml" title="HTML+CSS&lt;按钮风格/&gt; | RoKey! RoKey! - Atom Feed"
   href="https://wskkku.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
@@ -22,15 +24,12 @@
   function goPAGE() {
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
       setStyle(['https://cdn.jsdelivr.net/gh/wskkku/wskkku.github.io@main/mobile0.0.0.7.css']);
-    }else{
+    } else {
       setStyle(['https://cdn.jsdelivr.net/gh/wskkku/wskkku.github.io@main/webpc0.0.0.3.css']);
     }
   }
   goPAGE(); 
 </script>
-
-
-
 
     <meta name="description" content="HTML按钮风格
 
@@ -55,7 +54,7 @@ body {
       <div class="main-content">
         <div class="site-header">
   <a href="https://wskkku.github.io">
-  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1613739875209" alt="">
+  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1613741241077" alt="">
   </a>
   <h1 class="site-title">
     RoKey! RoKey!
@@ -425,14 +424,14 @@ input[type=&quot;checkbox&quot;]:checked:active + span::after {
     }
 }
 
-.button-streamer {
+body {
     position        : relative;
     background-color: rgb(17, 17, 17);
     width           : 100%;
     height          : 200px;
 }
 
-.button-streamer a {
+a {
     text-decoration: none;
     position       : absolute;
     left           : 50%;
@@ -452,7 +451,7 @@ input[type=&quot;checkbox&quot;]:checked:active + span::after {
     animation      : button-streamer 8s infinite;
 }
 
-.button-streamer a::before {
+a::before {
     content        : &quot;&quot;;
     position       : absolute;
     left           : -5px;
@@ -467,11 +466,11 @@ input[type=&quot;checkbox&quot;]:checked:active + span::after {
     animation      : button-streamer 8s infinite;
 }
 
-.button-streamer a:hover::before {
+a:hover::before {
     animation: button-streamer 4s infinite;
 }
 
-.button-streamer a:hover {
+a:hover {
     animation: button-streamer 4s infinite;
 }
 </code></pre>
