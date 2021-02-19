@@ -2,14 +2,34 @@
   <head>
   <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>JavaScript | RoKey! RoKey!</title>
-<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1613647737264">
+<title>
+  JavaScript | RoKey! RoKey!
+</title>
+<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1613712602822">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://wskkku.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="JavaScript | RoKey! RoKey! - Atom Feed" href="https://wskkku.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="JavaScript | RoKey! RoKey! - Atom Feed"
+  href="https://wskkku.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
-
+<script>
+  //根据设备加载不同的样式
+  var setStyle = function (cssArr) {
+    var i = 0, len = cssArr.length;
+    for (i; i < len; i++) {
+      document.write('<link href="' + cssArr[i] + '" type="text/css" rel=stylesheet>');
+    }
+  };
+  // 判断是否移动端
+  function goPAGE() {
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+      // window.location.href="移动端url";
+      //判断访问环境是 移动端 则加载以下样式
+      setStyle(['https://cdn.jsdelivr.net/gh/wskkku/wskkku.github.io@main/mobile.css']);
+    }
+  }
+  goPAGE();        // 调用function
+</script>
 
   <meta name="description" content="新年快乐" />
   </head>
@@ -18,7 +38,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://wskkku.github.io">
-  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1613647737264" alt="">
+  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1613712602822" alt="">
   </a>
   <h1 class="site-title">
     RoKey! RoKey!
@@ -81,37 +101,42 @@
   
     <article class="post">
       <a href="https://wskkku.github.io/post/ghj-de-feng-ge-he-feng-ge-he-feng-ge-he-feng-ge-he-feng-ge-he-feng-ge-he/">
-        <h2 class="post-title">JavaScript&lt;/&gt;</h2>
+        <h2 class="post-title">
+          JavaScript&lt;/&gt;
+        </h2>
       </a>
-      <div class="post-info">
-        <span>
-          2021-02-16
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="https://wskkku.github.io/tag/L6rtCvsbFL/" class="post-tag">
-            # 编程
-          </a>
-        
-          <a href="https://wskkku.github.io/tag/JDpSR67RO/" class="post-tag">
-            # JavaScript
-          </a>
-        
-      </div>
+
       
         <a href="https://wskkku.github.io/post/ghj-de-feng-ge-he-feng-ge-he-feng-ge-he-feng-ge-he-feng-ge-he-feng-ge-he/" class="post-feature-image" style="background-image: url('https://s3.ax1x.com/2021/02/16/ygPW7V.png')">
         </a>
-      
-      <div class="post-abstract">
-        <p>JavaScript基础</p>
+        
+          <div class="post-abstract">
+            <p>JavaScript基础</p>
 
-      </div>
+          </div>
+          <div class="post-info">
+            <div class="post-info-tag">
+              
+                <a href="https://wskkku.github.io/tag/L6rtCvsbFL/" class="post-tag">
+                  # 编程
+                </a>
+                
+                <a href="https://wskkku.github.io/tag/JDpSR67RO/" class="post-tag">
+                  # JavaScript
+                </a>
+                
+            </div>
+            <span>
+              2021-02-16
+            </span>
+            <span>
+              1 min read
+            </span>
+
+          </div>
     </article>
-  
+    
 </div>
-
         <div class="pagination-container">
   
   

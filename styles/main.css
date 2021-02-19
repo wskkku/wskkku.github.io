@@ -1183,10 +1183,8 @@ body .main {
     position: absolute;
     bottom: 2px;
     max-height: 20px;
-    max-width: 90%;
+    width: 100%;
     z-index: 10;
-    line-height: 24px;
-    background-color: rgba(255, 255, 255, .7);
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -1220,7 +1218,6 @@ body .main {
     padding: 0;
     margin: 1vw 0;
     border-bottom: 2px dotted #EAEAEA;
-    background-color: rgba(255, 255, 255, .7);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1240,7 +1237,6 @@ body .main {
     z-index: 10;
     padding: 0;
     margin-top: 15px;
-    background-color: rgba(255, 255, 255, .7);
     /* background:pink; */
     word-break: break-all;
     text-overflow: ellipsis;
@@ -1251,17 +1247,21 @@ body .main {
 }
 
 .post-container .post .post-info .post-tag {
-    display: inline-block;
+    float: left;
     background-color: #fff;
     height: 18px;
     z-index: 10;
     padding: 0 7px;
-    /* margin-left: 7px; */
+    margin-right: 7px;
     border: 1px solid #06f;
     border-radius: 9px;
     line-height: 16px;
     font-size: 12px;
     text-align: center;
+    vertical-align: middle;
+}
+
+.post-container .post .post-info span {
     vertical-align: middle;
 }
 
