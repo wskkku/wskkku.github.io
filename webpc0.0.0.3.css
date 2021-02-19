@@ -380,6 +380,10 @@ li {
 
 /* 归档页 start */
 
+.archives-container {
+    padding: 0;
+}
+
 .archives-container .year {
     width: 100%;
     margin: 0px 0px 16px;
@@ -413,8 +417,12 @@ li {
 }
 
 .archives-container .archives-inner .post-title {
+    overflow: hidden;
     display: inline-block;
+    max-width: 100%;
     position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .archives-container .archives-inner .post-title::after {
