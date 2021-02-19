@@ -41,6 +41,7 @@ body .main {
     overflow: hidden;
     position: relative;
     height: 57vh;
+    width: 100%;
     margin-top: -20px;
     padding: 18vh 0;
     padding-bottom: 15vh;
@@ -98,7 +99,6 @@ body .main {
     right: 0;
     width: 120px;
     height: 36px;
-    margin-right: 30px;
     padding: 0 16px;
     border: 2px solid #06f;
     border-radius: 5px;
@@ -388,6 +388,63 @@ li {
 }
 
 /* 标签页 end */
+
+/* 归档页 start */
+
+.archives-container {
+    padding: 0;
+}
+
+.archives-container .year {
+    width: 100%;
+    margin: 0px 0px 16px;
+    padding: 12px 24px;
+    border-bottom: 1px solid #E6E6E6;
+    font-size: 16px;
+}
+
+.archives-container .archives-inner {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 25px;
+    border-radius: 25px;
+}
+
+.archives-container .archives-inner:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.archives-container .archives-inner a {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.archives-container .archives-inner a::before {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    content: '';
+    height: 50%;
+    border-right: 4px solid #06f;
+    transform: translateY(-50%);
+}
+
+.archives-container .archives-inner .post:nth-child(even) {
+    margin-right: 2%;
+}
+
+.archives-container .archives-inner .post-title {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 归档页 end */
 
 .templet-inner {
     overflow: hidden;
