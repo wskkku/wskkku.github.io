@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wskkku.github.io</id>
     <title>RoKey! RoKey!</title>
-    <updated>2021-02-19T14:23:47.300Z</updated>
+    <updated>2021-02-19T15:41:25.239Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wskkku.github.io"/>
     <link rel="self" href="https://wskkku.github.io/atom.xml"/>
@@ -371,6 +371,71 @@ a:hover::before {
 
 a:hover {
     animation: button-streamer 4s infinite;
+}
+</code></pre>
+<h2 id="5质感开关">5.质感开关</h2>
+<div class="templet-inner">
+    <div class="toin-button">
+        <a href="#">内旋</a>
+    </div>
+</div>
+<!-- more -->
+<p>html</p>
+<pre><code>&lt;div class=&quot;toin-button&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;内旋&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+<p>css</p>
+<pre><code>.toin-button {
+    margin         : 0;
+    padding        : 42px 0;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    background     : #2f3542;
+}
+
+.toin-button a {
+    font-size      : 40px;
+    color          : #70a1ff;
+    width          : 100px;
+    height         : 100px;
+    line-height    : 100px;
+    margin         : 0 16px;
+    display        : inline-block;
+    position       : relative;
+    text-align     : center;
+    text-decoration: none;
+    font-size      : 36px;
+    transition     : all .3s ease;
+}
+
+.toin-button a::before,
+.toin-button a::after {
+    content   : &quot;&quot;;
+    position  : absolute;
+    box-sizing: border-box;
+    width     : 100%;
+    height    : 100%;
+    left      : 0;
+    top       : 0;
+    transition: all .3s ease;
+}
+
+.toin-button a:hover {
+    transform: scale(.8);
+}
+
+.toin-button a:hover::before {
+    border-left : 4px solid;
+    border-right: 4px solid;
+    transform   : skewX(20deg);
+}
+
+.toin-button a:hover::after {
+    border-top   : 4px solid;
+    border-bottom: 4px solid;
+    transform    : skewY(-20deg);
 }
 </code></pre>
 ]]></content>

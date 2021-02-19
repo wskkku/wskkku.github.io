@@ -5,7 +5,7 @@
 <title>
   HTML+CSS&lt;按钮风格/&gt; | RoKey! RoKey!
 </title>
-<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1613741241077">
+<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1613749201864">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://wskkku.github.io/styles/main.css">
 <link href='http://cdn.repository.webfont.com/webfonts/nomal/143324/47031/602fb7daf629d805acfb9654.css' rel='stylesheet'
@@ -54,7 +54,7 @@ body {
       <div class="main-content">
         <div class="site-header">
   <a href="https://wskkku.github.io">
-  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1613741241077" alt="">
+  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1613749201864" alt="">
   </a>
   <h1 class="site-title">
     RoKey! RoKey!
@@ -118,7 +118,7 @@ body {
                 2021-02-17
               </span>
               <span>
-                6 min read
+                7 min read
               </span>
               
                 <a href="https://wskkku.github.io/tag/BUHtxhEXI/" class="post-tag">
@@ -474,6 +474,71 @@ a:hover {
     animation: button-streamer 4s infinite;
 }
 </code></pre>
+<h2 id="5质感开关">5.质感开关</h2>
+<div class="templet-inner">
+    <div class="toin-button">
+        <a href="#">内旋</a>
+    </div>
+</div>
+<!-- more -->
+<p>html</p>
+<pre><code>&lt;div class=&quot;toin-button&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;内旋&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+<p>css</p>
+<pre><code>.toin-button {
+    margin         : 0;
+    padding        : 42px 0;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    background     : #2f3542;
+}
+
+.toin-button a {
+    font-size      : 40px;
+    color          : #70a1ff;
+    width          : 100px;
+    height         : 100px;
+    line-height    : 100px;
+    margin         : 0 16px;
+    display        : inline-block;
+    position       : relative;
+    text-align     : center;
+    text-decoration: none;
+    font-size      : 36px;
+    transition     : all .3s ease;
+}
+
+.toin-button a::before,
+.toin-button a::after {
+    content   : &quot;&quot;;
+    position  : absolute;
+    box-sizing: border-box;
+    width     : 100%;
+    height    : 100%;
+    left      : 0;
+    top       : 0;
+    transition: all .3s ease;
+}
+
+.toin-button a:hover {
+    transform: scale(.8);
+}
+
+.toin-button a:hover::before {
+    border-left : 4px solid;
+    border-right: 4px solid;
+    transform   : skewX(20deg);
+}
+
+.toin-button a:hover::after {
+    border-top   : 4px solid;
+    border-bottom: 4px solid;
+    transform    : skewY(-20deg);
+}
+</code></pre>
 
               </div>
               <div class="toc-container">
@@ -484,6 +549,7 @@ a:hover {
 <li><a href="#2ios%E5%BC%80%E5%85%B3">2.ios开关</a></li>
 <li><a href="#3%E5%88%86%E8%A3%82%E6%96%87%E5%AD%97%E6%95%88%E6%9E%9C">3.分裂文字效果</a></li>
 <li><a href="#4%E6%B5%81%E5%85%89%E6%BA%A2%E5%BD%A9">4.流光溢彩</a></li>
+<li><a href="#5%E8%B4%A8%E6%84%9F%E5%BC%80%E5%85%B3">5.质感开关</a></li>
 </ul>
 </li>
 </ul>
