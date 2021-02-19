@@ -33,23 +33,23 @@ body .main {
     background-color: #F4F4F4;
 }
 
-.main-content {
+.main .main-content {
     /* background-color: pink; */
+    width: 80vw;
+    padding: 0;
     margin: 0 auto;
 }
 
 .main .main-content .site-header {
     overflow: hidden;
     position: relative;
-    height: 55vh;
-    min-width: 350px;
+    height: 57vh;
     margin-top: -20px;
     padding: 18vh 0;
-    margin-bottom: 30px;
+    padding-bottom: 15vh;
+    margin-bottom: 0;
     border-radius: 10px;
     text-align: left;
-    /* background-color: #fff; */
-    /* background-color: pink; */
 }
 
 .main .main-content .site-header>a {
@@ -96,8 +96,9 @@ body .main {
 }
 
 .main-content .site-header .social-container>a {
-    position: relative;
-    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 120px;
     height: 36px;
     margin-right: 30px;
@@ -143,12 +144,12 @@ body .main {
     position: fixed;
     bottom: 0;
     right: 0;
-    height: 55px;
+    height: 65px;
     z-index: 100;
-    line-height: 50px;
+    line-height: 60px;
     text-align: center;
     background-color: #fff;
-    box-shadow: 3px 1px 10px rgba(0, 0, 0, .2);
+    box-shadow: 3px -1px 10px rgba(0, 0, 0, .2);
 }
 
 .site-header .menu-container a.menu {
@@ -165,6 +166,10 @@ body .main {
 /* 导航栏nav end */
 
 /* 内容container start */
+
+.post-container {
+    margin-top: 20px;
+}
 
 .post-container .post {
     position: relative;
