@@ -377,3 +377,58 @@ li {
 }
 
 /* 标签页 end */
+
+/* 归档页 start */
+
+.archives-container .year {
+    width: 100%;
+    margin: 0px 0px 16px;
+    padding: 12px 24px;
+    border-bottom: 1px solid #E6E6E6;
+    font-size: 16px;
+}
+
+.archives-container .archives-inner {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 25px;
+    border-radius: 25px;
+}
+
+.archives-container .archives-inner:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.archives-container .archives-inner a {
+    float: left;
+    width: 49%;
+    margin-bottom: 5px;
+    border-radius: 25px;
+}
+
+.archives-container .archives-inner .post:nth-child(even) {
+    margin-right: 2%;
+}
+
+.archives-container .archives-inner .post-title {
+    display: inline-block;
+    position: relative;
+}
+
+.archives-container .archives-inner .post-title::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    content: '';
+    width: 0%;
+    border-top: 4px solid #06f;
+    transition: all .3s;
+}
+
+.archives-container .archives-inner .post:hover .post-title::after {
+    width: 100%;
+}
+
+/* 归档页 end */
