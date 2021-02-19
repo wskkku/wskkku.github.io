@@ -4,13 +4,11 @@ pre {
     margin-bottom: 2%;
 }
 
-button, input {
-    cursor: pointer;
-}
 
 * {
     padding: 0;
     margin: 0;
+    cursor: default;
 }
 
 body {
@@ -109,7 +107,6 @@ body .main {
     font-size: 14px;
     line-height: 32px;
     text-align: center;
-    cursor: pointer;
 }
 
 .site-header .social-container>a i {
@@ -194,6 +191,7 @@ body .main {
     top: -150px;
     right: 0;
     width: 100%;
+    /* height: 150px; */
     border-radius: 25px 25px 0 0;
 }
 
@@ -244,6 +242,7 @@ body .main {
     width: 100%;
     bottom: -15px;
     left: 0;
+    /* background-color: pink; */
 }
 
 .post .post-info .post-info-tag, .post-container .post .post-info {
