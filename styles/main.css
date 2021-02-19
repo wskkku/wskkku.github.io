@@ -996,57 +996,57 @@ td {
         font-family: -apple-system,BlinkMacSystemFont,'Helvetica Neue','PingFang SC','Hiragino Sans GB','Droid Sans Fallback','Microsoft YaHei',sans-serif;
       }
     
-      
-.templet-inner {
+      .templet-inner {
     overflow: hidden;
 }
 
 /* 1.赛博朋克风格按钮 start */
 
 .templet-inner .cyber-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 20vh;
-    font-family: serif;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    min-height      : 20vh;
+    font-family     : serif;
     background-color: #F8F005;
 }
 
-.templet-inner .cyber-button button, .templet-inner .cyber-button button::after {
-    width: 380px;
-    height: 86px;
-    font-size: 36px;
-    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
-    border: 0;
-    color: #fff;
+.templet-inner .cyber-button button,
+.templet-inner .cyber-button button::after {
+    width         : 380px;
+    height        : 86px;
+    font-size     : 36px;
+    background    : linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border        : 0;
+    color         : #fff;
     letter-spacing: 3px;
-    line-height: 88px;
-    box-shadow: 6px 0px 0px #00E6F6;
-    outline: transparent;
-    position: relative;
+    line-height   : 88px;
+    box-shadow    : 6px 0px 0px #00E6F6;
+    outline       : transparent;
+    position      : relative;
 }
 
 .templet-inner .cyber-button button::after {
-    --slice-0: inset(50% 50% 50% 50%);
-    --slice-1: inset(80% -6px 0 0);
-    --slice-2: inset(50% -6px 30% 0);
-    --slice-3: inset(10% -6px 85% 0);
-    --slice-4: inset(40% -6px 43% 0);
-    --slice-5: inset(80% -6px 5% 0);
-    content: 'AVAILABLE NOW';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    --slice-0  : inset(50% 50% 50% 50%);
+    --slice-1  : inset(80% -6px 0 0);
+    --slice-2  : inset(50% -6px 30% 0);
+    --slice-3  : inset(10% -6px 85% 0);
+    --slice-4  : inset(40% -6px 43% 0);
+    --slice-5  : inset(80% -6px 5% 0);
+    content    : 'AVAILABLE NOW';
+    display    : block;
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    right      : 0;
+    bottom     : 0;
+    background : linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
     text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
-    clip-path: var(--slice-0);
+    clip-path  : var(--slice-0);
 }
 
 .templet-inner .cyber-button button:hover::after {
-    animation: 1s glitch;
+    animation                : 1s glitch;
     animation-timing-function: steps(2, end);
 }
 
@@ -1055,42 +1055,52 @@ td {
         clip-path: var(--slice-1);
         transform: translate(-20px, -10px);
     }
+
     10% {
         clip-path: var(--slice-3);
         transform: translate(10px, 10px);
     }
+
     20% {
         clip-path: var(--slice-1);
         transform: translate(-10px, 10px);
     }
+
     30% {
         clip-path: var(--slice-3);
         transform: translate(0px, 5px);
     }
+
     40% {
         clip-path: var(--slice-2);
         transform: translate(-5px, 0px);
     }
+
     50% {
         clip-path: var(--slice-3);
         transform: translate(5px, 0px);
     }
+
     60% {
         clip-path: var(--slice-4);
         transform: translate(5px, 10px);
     }
+
     70% {
         clip-path: var(--slice-2);
         transform: translate(-10px, 10px);
     }
+
     80% {
         clip-path: var(--slice-5);
         transform: translate(20px, -10px);
     }
+
     90% {
         clip-path: var(--slice-1);
         transform: translate(-10px, 0px);
     }
+
     100% {
         clip-path: var(--slice-1);
         transform: translate(0);
@@ -1102,46 +1112,46 @@ td {
 /* 2.ios开关 start */
 
 :root {
-    --button-width: 400px;
-    --button-height: 230px;
-    --toggle-diameter: 200px;
+    --button-width        : 400px;
+    --button-height       : 230px;
+    --toggle-diameter     : 200px;
     --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
     --toggle-shadow-offset: 10px;
-    --toggle-wider: 333px;
-    --color-grey: #E9E9E9;
-    --color-dark-grey: #39393D;
-    --color-green: #30D158;
+    --toggle-wider        : 333px;
+    --color-grey          : #E9E9E9;
+    --color-dark-grey     : #39393D;
+    --color-green         : #30D158;
 }
 
 .templet-inner .ios-button span {
-    display: inline-block;
-    width: var(--button-width);
-    height: var(--button-height);
+    display         : inline-block;
+    width           : var(--button-width);
+    height          : var(--button-height);
     background-color: var(--color-grey);
-    border-radius: calc(var(--button-height) / 2);
-    position: relative;
-    transition: .3s all ease-in-out;
+    border-radius   : calc(var(--button-height) / 2);
+    position        : relative;
+    transition      : .3s all ease-in-out;
 }
 
 .templet-inner .ios-button span::after {
-    content: '';
-    display: inline-block;
-    width: var(--toggle-diameter);
-    height: var(--toggle-diameter);
+    content         : '';
+    display         : inline-block;
+    width           : var(--toggle-diameter);
+    height          : var(--toggle-diameter);
     background-color: #fff;
-    border-radius: calc(var(--toggle-diameter) / 2);
-    position: absolute;
-    top: var(--button-toggle-offset);
-    transform: translateX(var(--button-toggle-offset));
-    box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, .10);
-    transition: .3s all ease-in-out;
+    border-radius   : calc(var(--toggle-diameter) / 2);
+    position        : absolute;
+    top             : var(--button-toggle-offset);
+    transform       : translateX(var(--button-toggle-offset));
+    box-shadow      : var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, .10);
+    transition      : .3s all ease-in-out;
 }
 
 .templet-inner .ios-button {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    min-height: 40vh;
+    align-items    : center;
+    min-height     : 40vh;
 }
 
 .templet-inner .ios-button input[type="checkbox"]:checked+span {
@@ -1149,7 +1159,7 @@ td {
 }
 
 .templet-inner .ios-button input[type="checkbox"]:checked+span::after {
-    transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+    transform : translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
     box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, .10);
 }
 
@@ -1169,6 +1179,7 @@ td {
     .templet-inner .ios-button {
         background-color: #1C1C1E;
     }
+
     .templet-inner .ios-button span {
         background-color: var(--color-dark-grey);
     }
@@ -1180,27 +1191,28 @@ td {
 
 .ftext-button {
     background-color: rgb(189, 207, 255);
-    display: flex;
-    justify-content: center;
+    display         : flex;
+    justify-content : center;
 }
 
 .ftext-button .a {
-    position: relative;
-    /* top: 250px; */
-    width: 300px;
-    display: flex;
+    position       : relative;
+    /* top         : 250px; */
+    width          : 300px;
+    display        : flex;
     justify-content: center;
-    margin: 0 30px;
+    margin         : 0 30px;
 }
 
-.ftext-button .c, .ftext-button .b {
-    font: 900 100px '';
+.ftext-button .c,
+.ftext-button .b {
+    font       : 900 100px '';
     line-height: 150px;
-    position: absolute;
-    color: brown;
-    top: 0;
+    position   : absolute;
+    color      : brown;
+    top        : 0;
     /* 使文字上下移动时有0.4s的过渡效果 */
-    transition: .4s;
+    transition : .4s;
 }
 
 .ftext-button .c {
@@ -1214,7 +1226,8 @@ td {
     clip-path: inset(1% 0 50% 0);
 }
 
-.ftext-button .a:hover .b, .ftext-button .a:hover .c {
+.ftext-button .a:hover .b,
+.ftext-button .a:hover .c {
     /* 让--i为30的向上移动30px，-30的向下移动30px
     这样子就能空出60px留给中间的超链接 */
     top: calc(var(--i)*1px);
@@ -1226,12 +1239,72 @@ td {
 
 .ftext-button .d {
     text-decoration: none;
-    color: cyan;
-    font: 600 30px '';
-    line-height: 150px;
-    opacity: 0;
-    transition: .3s;
+    color          : cyan;
+    font           : 600 30px '';
+    line-height    : 150px;
+    opacity        : 0;
+    transition     : .3s;
 }
 
 /* 分裂文字效果 end */
+
+/* 4.流光溢彩效果 start */
+
+@keyframes button-streamer {
+    100% {
+        background-position: -400% 0;
+    }
+}
+
+.button-streamer {
+    position        : relative;
+    background-color: rgb(17, 17, 17);
+    width           : 100%;
+    height          : 200px;
+}
+
+.button-streamer a {
+    text-decoration: none;
+    position       : absolute;
+    left           : 50%;
+    top            : 50%;
+    transform      : translate(-50%, -50%);
+    font-size      : 24px;
+    background     : linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    width          : 400px;
+    height         : 100px;
+    line-height    : 100px;
+    text-align     : center;
+    color          : white;
+    text-transform : uppercase;
+    border-radius  : 50px;
+    z-index        : 1;
+    animation      : button-streamer 8s infinite;
+}
+
+.button-streamer a::before {
+    content        : "";
+    position       : absolute;
+    left           : -5px;
+    right          : -5px;
+    bottom         : -5px;
+    top            : -5px;
+    background     : linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius  : 50px;
+    filter         : blur(20px);
+    z-index        : -1;
+    animation      : button-streamer 8s infinite;
+}
+
+.button-streamer a:hover::before {
+    animation: button-streamer 4s infinite;
+}
+
+.button-streamer a:hover {
+    animation: button-streamer 4s infinite;
+}
+
+/* 4.流光溢彩效果 end */
     

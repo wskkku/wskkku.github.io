@@ -3,12 +3,12 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-  HTML&lt;按钮风格/&gt; | RoKey! RoKey!
+  HTML+CSS&lt;按钮风格/&gt; | RoKey! RoKey!
 </title>
-<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1613731227354">
+<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1613739875209">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://wskkku.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="HTML&lt;按钮风格/&gt; | RoKey! RoKey! - Atom Feed"
+<link rel="alternate" type="application/atom+xml" title="HTML+CSS&lt;按钮风格/&gt; | RoKey! RoKey! - Atom Feed"
   href="https://wskkku.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
@@ -55,7 +55,7 @@ body {
       <div class="main-content">
         <div class="site-header">
   <a href="https://wskkku.github.io">
-  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1613731227354" alt="">
+  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1613739875209" alt="">
   </a>
   <h1 class="site-title">
     RoKey! RoKey!
@@ -112,14 +112,14 @@ body {
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              HTML&lt;按钮风格/&gt;
+              HTML+CSS&lt;按钮风格/&gt;
             </h2>
             <div class="post-info">
               <span>
                 2021-02-17
               </span>
               <span>
-                5 min read
+                6 min read
               </span>
               
                 <a href="https://wskkku.github.io/tag/BUHtxhEXI/" class="post-tag">
@@ -408,6 +408,73 @@ input[type=&quot;checkbox&quot;]:checked:active + span::after {
     transition: .3s;
 }
 </code></pre>
+<h2 id="4流光溢彩">4.流光溢彩</h2>
+<div class="templet-inner">
+    <div class="button-streamer">
+        <a href="javascript:;">START</a>
+    </div>
+</div>
+<!-- more -->
+<p>html</p>
+<pre><code>&lt;a&gt;START&lt;/a&gt;
+</code></pre>
+<p>css</p>
+<pre><code>@keyframes button-streamer {
+    100% {
+        background-position: -400% 0;
+    }
+}
+
+.button-streamer {
+    position        : relative;
+    background-color: rgb(17, 17, 17);
+    width           : 100%;
+    height          : 200px;
+}
+
+.button-streamer a {
+    text-decoration: none;
+    position       : absolute;
+    left           : 50%;
+    top            : 50%;
+    transform      : translate(-50%, -50%);
+    font-size      : 24px;
+    background     : linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    width          : 400px;
+    height         : 100px;
+    line-height    : 100px;
+    text-align     : center;
+    color          : white;
+    text-transform : uppercase;
+    border-radius  : 50px;
+    z-index        : 1;
+    animation      : button-streamer 8s infinite;
+}
+
+.button-streamer a::before {
+    content        : &quot;&quot;;
+    position       : absolute;
+    left           : -5px;
+    right          : -5px;
+    bottom         : -5px;
+    top            : -5px;
+    background     : linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b,#03a9f4;
+    background-size: 400%;
+    border-radius  : 50px;
+    filter         : blur(20px);
+    z-index        : -1;
+    animation      : button-streamer 8s infinite;
+}
+
+.button-streamer a:hover::before {
+    animation: button-streamer 4s infinite;
+}
+
+.button-streamer a:hover {
+    animation: button-streamer 4s infinite;
+}
+</code></pre>
 
               </div>
               <div class="toc-container">
@@ -417,6 +484,7 @@ input[type=&quot;checkbox&quot;]:checked:active + span::after {
 <li><a href="#1%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B%E9%A3%8E%E6%A0%BC%E6%8C%89%E9%92%AE">1.赛博朋克风格按钮</a></li>
 <li><a href="#2ios%E5%BC%80%E5%85%B3">2.ios开关</a></li>
 <li><a href="#3%E5%88%86%E8%A3%82%E6%96%87%E5%AD%97%E6%95%88%E6%9E%9C">3.分裂文字效果</a></li>
+<li><a href="#4%E6%B5%81%E5%85%89%E6%BA%A2%E5%BD%A9">4.流光溢彩</a></li>
 </ul>
 </li>
 </ul>
