@@ -5,7 +5,7 @@
 <title>
   HTML+CSS&lt;按钮风格/&gt; | RoKey! RoKey!
 </title>
-<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1613794979022">
+<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1613832055429">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://wskkku.github.io/styles/main.css">
 <link href='http://cdn.repository.webfont.com/webfonts/nomal/143324/47031/602fb7daf629d805acfb9654.css' rel='stylesheet'
@@ -34,17 +34,17 @@
     <meta name="description" content="HTML按钮风格
 
 1.赛博朋克风格按钮
- 
+
     
-         AVAILABLE NOW
+        AVAILABLE NOW
     
- 
+
 html
 &lt;button&gt;AVAILABLE NOW&lt;/button&gt;
 
 css
 body {
-  ..." />
+    d..." />
     <meta name="keywords" content="HTML,编程" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -54,7 +54,7 @@ body {
       <div class="main-content">
         <div class="site-header">
   <a href="https://wskkku.github.io">
-  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1613794979022" alt="">
+  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1613832055429" alt="">
   </a>
   <h1 class="site-title">
     RoKey! RoKey!
@@ -118,7 +118,7 @@ body {
                 2021-02-17
               </span>
               <span>
-                7 min read
+                23 min read
               </span>
               
                 <a href="https://wskkku.github.io/tag/BUHtxhEXI/" class="post-tag">
@@ -138,11 +138,11 @@ body {
                 <p>HTML按钮风格</p>
 <!-- more -->
 <h2 id="1赛博朋克风格按钮">1.赛博朋克风格按钮</h2>
- <div class="templet-inner">
+<div class="templet-inner">
     <div class="cyber-button">
-         <button>AVAILABLE NOW</button>
+        <button>AVAILABLE NOW</button>
     </div>
- </div>
+</div>
 <p><strong>html</strong></p>
 <pre><code>&lt;button&gt;AVAILABLE NOW&lt;/button&gt;
 </code></pre>
@@ -539,6 +539,866 @@ a:hover {
     transform    : skewY(-20deg);
 }
 </code></pre>
+<h2 id="6多种效果1">6.多种效果(1)</h2>
+<div class="templet-inner">
+    <div class="button-moreone">
+        <button class="custom-button-moreone btn-2">凹陷</button>
+        <button class="custom-button-moreone btn-3"><span>边框扩展</span></button>
+        <button class="custom-button-moreone btn-4"><span>变暗</span></button>
+        <button class="custom-button-moreone btn-5"><span>边框滑入</span></button>
+        <button class="custom-button-moreone btn-6"><span>透明边框</span></button>
+        <button class="custom-button-moreone btn-7"><span>边框扩展阴影</span></button>
+        <button class="custom-button-moreone btn-8"><span>边框扩展阴影2</span></button>
+        <button class="custom-button-moreone btn-11">变亮<div class="dot"></div></button>
+        <button class="custom-button-moreone btn-12"><span>转翻</span><span>翻转</span></button>
+        <button class="custom-button-moreone btn-13">下切</button>
+        <button class="custom-button-moreone btn-14">上切</button>
+        <button class="custom-button-moreone btn-15">右切</button>
+        <button class="custom-button-moreone btn-16">左切</button>
+    </div>
+</div>
+<!-- more -->
+<p>html</p>
+<pre><code>            &lt;button class=&quot;custom-button-moreone btn-2&quot;&gt;凹陷&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-3&quot;&gt;&lt;span&gt;边框扩展&lt;/span&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-4&quot;&gt;&lt;span&gt;变暗&lt;/span&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-5&quot;&gt;&lt;span&gt;边框滑入&lt;/span&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-6&quot;&gt;&lt;span&gt;透明边框&lt;/span&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-7&quot;&gt;&lt;span&gt;边框扩展阴影&lt;/span&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-8&quot;&gt;&lt;span&gt;边框扩展阴影2&lt;/span&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-11&quot;&gt;变亮&lt;div class=&quot;dot&quot;&gt;&lt;/div&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-12&quot;&gt;&lt;span&gt;转翻&lt;/span&gt;&lt;span&gt;翻转&lt;/span&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-13&quot;&gt;下切&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-14&quot;&gt;上切&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-15&quot;&gt;右切&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-16&quot;&gt;左切&lt;/button&gt;
+</code></pre>
+<p>css</p>
+<pre><code>
+.frame {
+    width     : 90%;
+    margin    : 40px auto;
+    text-align: center;
+    background: #e0e5ec;
+}
+
+button {
+    margin: 20px;
+}
+
+.custom-btn {
+    width        : 130px;
+    height       : 40px;
+    color        : #fff;
+    border-radius: 5px;
+    padding      : 10px 25px;
+    font-family  : 'Lato', sans-serif;
+    font-weight  : 500;
+    background   : transparent;
+    cursor       : pointer;
+    transition   : all 0.3s ease;
+    position     : relative;
+    display      : inline-block;
+    box-shadow   : inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+/* 2 */
+.btn-2 {
+    background: rgb(96, 9, 240);
+    background: linear-gradient(0deg, rgba(96, 9, 240, 1) 0%, rgba(129, 5, 240, 1) 100%);
+    border    : none;
+
+}
+
+.btn-2:before {
+    height: 0%;
+    width : 2px;
+}
+
+.btn-2:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+        -4px -4px 6px 0 rgba(116, 125, 136, .5),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+
+/* 3 */
+.btn-3 {
+    background : rgb(0, 172, 238);
+    background : linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+    width      : 130px;
+    height     : 40px;
+    line-height: 42px;
+    padding    : 0;
+    border     : none;
+
+}
+
+.btn-3 span {
+    position: relative;
+    display : block;
+    width   : 100%;
+    height  : 100%;
+}
+
+.btn-3:before,
+.btn-3:after {
+    position  : absolute;
+    content   : &quot;&quot;;
+    right     : 0;
+    top       : 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.3s ease;
+}
+
+.btn-3:before {
+    height: 0%;
+    width : 2px;
+}
+
+.btn-3:after {
+    width : 0%;
+    height: 2px;
+}
+
+.btn-3:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-3:hover:before {
+    height: 100%;
+}
+
+.btn-3:hover:after {
+    width: 100%;
+}
+
+.btn-3 span:hover {
+    color: rgba(2, 126, 251, 1);
+}
+
+.btn-3 span:before,
+.btn-3 span:after {
+    position  : absolute;
+    content   : &quot;&quot;;
+    left      : 0;
+    bottom    : 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.3s ease;
+}
+
+.btn-3 span:before {
+    width : 2px;
+    height: 0%;
+}
+
+.btn-3 span:after {
+    width : 0%;
+    height: 2px;
+}
+
+.btn-3 span:hover:before {
+    height: 100%;
+}
+
+.btn-3 span:hover:after {
+    width: 100%;
+}
+
+/* 4 */
+.btn-4 {
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    line-height     : 42px;
+    padding         : 0;
+    border          : none;
+}
+
+.btn-4:hover {
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+}
+
+.btn-4 span {
+    position: relative;
+    display : block;
+    width   : 100%;
+    height  : 100%;
+}
+
+.btn-4:before,
+.btn-4:after {
+    position: absolute;
+    content : &quot;&quot;;
+    right   : 0;
+    top     : 0;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .9),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .9),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-4:before {
+    height: 0%;
+    width : .1px;
+}
+
+.btn-4:after {
+    width : 0%;
+    height: .1px;
+}
+
+.btn-4:hover:before {
+    height: 100%;
+}
+
+.btn-4:hover:after {
+    width: 100%;
+}
+
+.btn-4 span:before,
+.btn-4 span:after {
+    position: absolute;
+    content : &quot;&quot;;
+    left    : 0;
+    bottom  : 0;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .9),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .9),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-4 span:before {
+    width : .1px;
+    height: 0%;
+}
+
+.btn-4 span:after {
+    width : 0%;
+    height: .1px;
+}
+
+.btn-4 span:hover:before {
+    height: 100%;
+}
+
+.btn-4 span:hover:after {
+    width: 100%;
+}
+
+/* 5 */
+.btn-5 {
+    width      : 130px;
+    height     : 40px;
+    line-height: 42px;
+    padding    : 0;
+    border     : none;
+    background : rgb(255, 27, 0);
+    background : linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+}
+
+.btn-5:hover {
+    color     : #f0094a;
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-5:before,
+.btn-5:after {
+    content   : '';
+    position  : absolute;
+    top       : 0;
+    right     : 0;
+    height    : 2px;
+    width     : 0;
+    background: #f0094a;
+    box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+}
+
+.btn-5:after {
+    right : inherit;
+    top   : inherit;
+    left  : 0;
+    bottom: 0;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+    width     : 100%;
+    transition: 800ms ease all;
+}
+
+
+/* 6 */
+.btn-6 {
+    background : rgb(247, 150, 192);
+    background : radial-gradient(circle, rgba(247, 150, 192, 1) 0%, rgba(118, 174, 241, 1) 100%);
+    line-height: 42px;
+    padding    : 0;
+    border     : none;
+}
+
+.btn-6 span {
+    position: relative;
+    display : block;
+    width   : 100%;
+    height  : 100%;
+}
+
+.btn-6:before,
+.btn-6:after {
+    position: absolute;
+    content : &quot;&quot;;
+    height  : 0%;
+    width   : 1px;
+    box-shadow:
+        -1px -1px 20px 0px rgba(255, 255, 255, 1),
+        -4px -4px 5px 0px rgba(255, 255, 255, 1),
+        7px 7px 20px 0px rgba(0, 0, 0, .4),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+}
+
+.btn-6:before {
+    right     : 0;
+    top       : 0;
+    transition: all 500ms ease;
+}
+
+.btn-6:after {
+    left      : 0;
+    bottom    : 0;
+    transition: all 500ms ease;
+}
+
+.btn-6:hover {
+    background: transparent;
+    color     : #76aef1;
+    box-shadow: none;
+}
+
+.btn-6:hover:before {
+    transition: all 500ms ease;
+    height    : 100%;
+}
+
+.btn-6:hover:after {
+    transition: all 500ms ease;
+    height    : 100%;
+}
+
+.btn-6 span:before,
+.btn-6 span:after {
+    position: absolute;
+    content : &quot;&quot;;
+    box-shadow:
+        -1px -1px 20px 0px rgba(255, 255, 255, 1),
+        -4px -4px 5px 0px rgba(255, 255, 255, 1),
+        7px 7px 20px 0px rgba(0, 0, 0, .4),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+}
+
+.btn-6 span:before {
+    left      : 0;
+    top       : 0;
+    width     : 0%;
+    height    : .5px;
+    transition: all 500ms ease;
+}
+
+.btn-6 span:after {
+    right     : 0;
+    bottom    : 0;
+    width     : 0%;
+    height    : .5px;
+    transition: all 500ms ease;
+}
+
+.btn-6 span:hover:before {
+    width: 100%;
+}
+
+.btn-6 span:hover:after {
+    width: 100%;
+}
+
+/* 7 */
+.btn-7 {
+    background : linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+    line-height: 42px;
+    padding    : 0;
+    border     : none;
+}
+
+.btn-7 span {
+    position: relative;
+    display : block;
+    width   : 100%;
+    height  : 100%;
+}
+
+.btn-7:before,
+.btn-7:after {
+    position  : absolute;
+    content   : &quot;&quot;;
+    right     : 0;
+    bottom    : 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-7:before {
+    height: 0%;
+    width : 2px;
+}
+
+.btn-7:after {
+    width : 0%;
+    height: 2px;
+}
+
+.btn-7:hover {
+    color     : rgba(251, 75, 2, 1);
+    background: transparent;
+}
+
+.btn-7:hover:before {
+    height: 100%;
+}
+
+.btn-7:hover:after {
+    width: 100%;
+}
+
+.btn-7 span:before,
+.btn-7 span:after {
+    position  : absolute;
+    content   : &quot;&quot;;
+    left      : 0;
+    top       : 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-7 span:before {
+    width : 2px;
+    height: 0%;
+}
+
+.btn-7 span:after {
+    height: 2px;
+    width : 0%;
+}
+
+.btn-7 span:hover:before {
+    height: 100%;
+}
+
+.btn-7 span:hover:after {
+    width: 100%;
+}
+
+/* 8 */
+.btn-8 {
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+    line-height     : 42px;
+    padding         : 0;
+    border          : none;
+}
+
+.btn-8 span {
+    position: relative;
+    display : block;
+    width   : 100%;
+    height  : 100%;
+}
+
+.btn-8:before,
+.btn-8:after {
+    position    : absolute;
+    content     : &quot;&quot;;
+    right       : 0;
+    bottom      : 0;
+    background  : #c797eb;
+    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+    transition  : all 0.3s ease;
+}
+
+.btn-8:before {
+    height: 0%;
+    width : 2px;
+}
+
+.btn-8:after {
+    width : 0%;
+    height: 2px;
+}
+
+.btn-8:hover:before {
+    height: 100%;
+}
+
+.btn-8:hover:after {
+    width: 100%;
+}
+
+.btn-8:hover {
+    background: transparent;
+}
+
+.btn-8 span:hover {
+    color: #c797eb;
+}
+
+.btn-8 span:before,
+.btn-8 span:after {
+    position    : absolute;
+    content     : &quot;&quot;;
+    left        : 0;
+    top         : 0;
+    background  : #c797eb;
+    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+    transition  : all 0.3s ease;
+}
+
+.btn-8 span:before {
+    width : 2px;
+    height: 0%;
+}
+
+.btn-8 span:after {
+    height: 2px;
+    width : 0%;
+}
+
+.btn-8 span:hover:before {
+    height: 100%;
+}
+
+.btn-8 span:hover:after {
+    width: 100%;
+}
+
+
+
+
+/* 11 */
+.btn-11 {
+    border    : none;
+    background: rgb(251, 33, 117);
+    background: linear-gradient(0deg, rgba(251, 33, 117, 1) 0%, rgba(234, 76, 137, 1) 100%);
+    color     : #fff;
+    overflow  : hidden;
+}
+
+.btn-11:hover {
+    text-decoration: none;
+    color          : #fff;
+}
+
+.btn-11:before {
+    position        : absolute;
+    content         : '';
+    display         : inline-block;
+    top             : -180px;
+    left            : 0;
+    width           : 30px;
+    height          : 100%;
+    background-color: #fff;
+    animation       : shiny-btn1 3s ease-in-out infinite;
+}
+
+.btn-11:hover {
+    opacity: .7;
+}
+
+.btn-11:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+@keyframes shiny-btn1 {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity          : 0;
+    }
+
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity          : 0.5;
+    }
+
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity          : 1;
+    }
+
+    100% {
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity          : 0;
+    }
+}
+
+/* 12 */
+.btn-12 {
+    position           : relative;
+    right              : 20px;
+    bottom             : 20px;
+    border             : none;
+    box-shadow         : none;
+    width              : 130px;
+    height             : 40px;
+    line-height        : 42px;
+    -webkit-perspective: 230px;
+    perspective        : 230px;
+}
+
+.btn-12 span {
+    background: rgb(0, 172, 238);
+    background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+    display   : block;
+    position  : absolute;
+    width     : 130px;
+    height    : 40px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    border-radius     : 5px;
+    margin            : 0;
+    text-align        : center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    box-sizing        : border-box;
+    -webkit-transition: all .3s;
+    transition        : all .3s;
+}
+
+.btn-12 span:nth-child(1) {
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    -webkit-transform       : rotateX(90deg);
+    -moz-transform          : rotateX(90deg);
+    transform               : rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin   : 50% 50% -20px;
+    transform-origin        : 50% 50% -20px;
+}
+
+.btn-12 span:nth-child(2) {
+    -webkit-transform       : rotateX(0deg);
+    -moz-transform          : rotateX(0deg);
+    transform               : rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin   : 50% 50% -20px;
+    transform-origin        : 50% 50% -20px;
+}
+
+.btn-12:hover span:nth-child(1) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform   : rotateX(0deg);
+    transform        : rotateX(0deg);
+}
+
+.btn-12:hover span:nth-child(2) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    color            : transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform   : rotateX(-90deg);
+    transform        : rotateX(-90deg);
+}
+
+
+/* 13 */
+.btn-13 {
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border          : none;
+    z-index         : 1;
+}
+
+.btn-13:after {
+    position        : absolute;
+    content         : &quot;&quot;;
+    width           : 100%;
+    height          : 0;
+    bottom          : 0;
+    left            : 0;
+    z-index         : -1;
+    border-radius   : 5px;
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    box-shadow      :
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.btn-13:hover {
+    color: #fff;
+}
+
+.btn-13:hover:after {
+    top   : 0;
+    height: 100%;
+}
+
+.btn-13:active {
+    top: 2px;
+}
+
+
+/* 14 */
+.btn-14 {
+    background: rgb(255, 151, 0);
+    border    : none;
+    z-index   : 1;
+}
+
+.btn-14:after {
+    position        : absolute;
+    content         : &quot;&quot;;
+    width           : 100%;
+    height          : 0;
+    top             : 0;
+    left            : 0;
+    z-index         : -1;
+    border-radius   : 5px;
+    background-color: #eaf818;
+    background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+    box-shadow      : inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+}
+
+.btn-14:hover {
+    color: #000;
+}
+
+.btn-14:hover:after {
+    top   : auto;
+    bottom: 0;
+    height: 100%;
+}
+
+.btn-14:active {
+    top: 2px;
+}
+
+/* 15 */
+.btn-15 {
+    background: #b621fe;
+    border    : none;
+    z-index   : 1;
+}
+
+.btn-15:after {
+    position        : absolute;
+    content         : &quot;&quot;;
+    width           : 0;
+    height          : 100%;
+    top             : 0;
+    right           : 0;
+    z-index         : -1;
+    background-color: #663dff;
+    border-radius   : 5px;
+    box-shadow      : inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+}
+
+.btn-15:hover {
+    color: #fff;
+}
+
+.btn-15:hover:after {
+    left : 0;
+    width: 100%;
+}
+
+.btn-15:active {
+    top: 2px;
+}
+
+
+/* 16 */
+.btn-16 {
+    background: #0fad44;
+    border    : none;
+    z-index   : 1;
+}
+
+.btn-16:after {
+    position        : absolute;
+    content         : &quot;&quot;;
+    width           : 100%;
+    height          : 100%;
+    top             : 0;
+    right           : 0;
+    z-index         : -1;
+    background-color: #11ad8b;
+    border-radius   : 5px;
+    box-shadow      : inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+}
+
+.btn-16:hover {
+    color: #fff;
+}
+
+.btn-16:hover:after {
+    left : 0;
+    width: 0%;
+}
+
+.btn-16:active {
+    top: 2px;
+}
+</code></pre>
 
               </div>
               <div class="toc-container">
@@ -550,6 +1410,7 @@ a:hover {
 <li><a href="#3%E5%88%86%E8%A3%82%E6%96%87%E5%AD%97%E6%95%88%E6%9E%9C">3.分裂文字效果</a></li>
 <li><a href="#4%E6%B5%81%E5%85%89%E6%BA%A2%E5%BD%A9">4.流光溢彩</a></li>
 <li><a href="#5%E5%86%85%E6%97%8B%E6%95%88%E6%9E%9C">5.内旋效果</a></li>
+<li><a href="#6%E5%A4%9A%E7%A7%8D%E6%95%88%E6%9E%9C1">6.多种效果(1)</a></li>
 </ul>
 </li>
 </ul>
