@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wskkku.github.io</id>
     <title>RoKey! RoKey!</title>
-    <updated>2021-02-26T03:54:30.458Z</updated>
+    <updated>2021-02-26T04:59:13.554Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wskkku.github.io"/>
     <link rel="self" href="https://wskkku.github.io/atom.xml"/>
@@ -1339,6 +1339,12 @@ button {
 }
 
 var 变量名 = new 函数名('参数1', 参数2, '参数3');
+</code></pre>
+<h3 id="3遍历对象">3.遍历对象</h3>
+<pre><code>for (var k in 对象名) {
+    console.log(k);            //输出属性
+    console.log(对象名[k]);       // 输出参数
+}
 </code></pre>
 ]]></content>
     </entry>
