@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wskkku.github.io</id>
     <title>RoKey! RoKey!</title>
-    <updated>2021-02-26T05:00:04.590Z</updated>
+    <updated>2021-02-26T09:44:39.502Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wskkku.github.io"/>
     <link rel="self" href="https://wskkku.github.io/atom.xml"/>
@@ -1345,6 +1345,9 @@ var 变量名 = new 函数名('参数1', 参数2, '参数3');
     console.log(k);            //输出属性
     console.log(对象名[k]);       // 输出参数
 }
+</code></pre>
+<h3 id="4三元运算符">4.三元运算符</h3>
+<pre><code>条件 ? 表达式1(ture执行) : 表达式2(flase执行) ;
 </code></pre>
 ]]></content>
     </entry>
