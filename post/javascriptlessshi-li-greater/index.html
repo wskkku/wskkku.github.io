@@ -5,7 +5,7 @@
 <title>
   Javascript&lt;实例/&gt; | RoKey! RoKey!
 </title>
-<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1614338511239">
+<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1614339233375">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://wskkku.github.io/styles/main.css">
 <link href='http://cdn.repository.webfont.com/webfonts/nomal/143324/47031/602fb7daf629d805acfb9654.css' rel='stylesheet'
@@ -47,7 +47,7 @@ function countDown(time) {
       <div class="main-content">
         <div class="site-header">
   <a href="https://wskkku.github.io">
-  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1614338511239" alt="">
+  <img class="avatar" src="https://wskkku.github.io/images/avatar.png?v=1614339233375" alt="">
   </a>
   <h1 class="site-title">
     RoKey! RoKey!
@@ -149,6 +149,17 @@ arr.sort(function (a, b) {
     return b - a  //降序
 })
 </code></pre>
+<h3 id="3数组去重">3.数组去重</h3>
+<pre><code>function unique(arr) {
+    var newArr = []
+    for (var i = 0; i &lt; arr.length; i++) {
+        if (newArr.indexOf(arr[i]) == -1) {
+            newArr.push(arr[i])
+        }
+    }
+    return newArr
+}
+</code></pre>
 
               </div>
               <div class="toc-container">
@@ -159,6 +170,7 @@ arr.sort(function (a, b) {
 <ul>
 <li><a href="#1%E5%80%92%E8%AE%A1%E6%97%B6">1.倒计时</a></li>
 <li><a href="#2%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F">2.冒泡排序</a></li>
+<li><a href="#3%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D">3.数组去重</a></li>
 </ul>
 </li>
 </ul>
