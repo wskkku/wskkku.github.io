@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wskkku.github.io</id>
     <title>RoKey! RoKey!</title>
-    <updated>2021-02-26T09:44:39.502Z</updated>
+    <updated>2021-02-26T10:46:14.793Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wskkku.github.io"/>
     <link rel="self" href="https://wskkku.github.io/atom.xml"/>
@@ -10,6 +10,30 @@
     <logo>https://wskkku.github.io/images/avatar.png</logo>
     <icon>https://wskkku.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, RoKey! RoKey!</rights>
+    <entry>
+        <title type="html"><![CDATA[Javascript<实例/>]]></title>
+        <id>https://wskkku.github.io/post/javascriptlessshi-li-greater/</id>
+        <link href="https://wskkku.github.io/post/javascriptlessshi-li-greater/">
+        </link>
+        <updated>2021-02-26T10:44:42.000Z</updated>
+        <summary type="html"><![CDATA[<p>javascritp基础实例框架</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>javascritp基础实例框架</p>
+<!-- more -->
+<h3 id="1倒计时">1.倒计时</h3>
+<pre><code>function countDown(time) {
+    var nowTime = +new Date();
+    var inputTime = +new Date(time);
+    var times = (inputTime - nowTime) / 1000;
+    var day = parseInt(times / 60 / 60 / 24);
+    var hour = parseInt(times / 60 / 60 % 24);
+    var minute = parseInt(times / 60 % 60);
+    var second = parseInt(times % 60);
+    return day + 'days' + hour + 'hours' + minute + 'minutes' + second + 'seconds';
+}
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[HTML<移动端基础/>]]></title>
         <id>https://wskkku.github.io/post/htmllessgreateryi-dong-duan/</id>
