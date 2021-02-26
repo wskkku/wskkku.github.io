@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wskkku.github.io</id>
     <title>RoKey! RoKey!</title>
-    <updated>2021-02-26T10:57:55.601Z</updated>
+    <updated>2021-02-26T11:21:57.291Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wskkku.github.io"/>
     <link rel="self" href="https://wskkku.github.io/atom.xml"/>
@@ -22,15 +22,22 @@
 <!-- more -->
 <h3 id="1倒计时">1.倒计时</h3>
 <pre><code>function countDown(time) {
-    var nowTime = +new Date();
-    var inputTime = +new Date(time);
-    var times = (inputTime - nowTime) / 1000;
-    var day = parseInt(times / 60 / 60 / 24);
-    var hour = parseInt(times / 60 / 60 % 24);
-    var minute = parseInt(times / 60 % 60);
-    var second = parseInt(times % 60);
-    return day + 'days' + hour + 'hours' + minute + 'minutes' + second + 'seconds';
+    var nowTime = +new Date()
+    var inputTime = +new Date(time)
+    var times = (inputTime - nowTime) / 1000
+    var day = parseInt(times / 60 / 60 / 24)
+    var hour = parseInt(times / 60 / 60 % 24)
+    var minute = parseInt(times / 60 % 60)
+    var second = parseInt(times % 60)
+    return day + 'days' + hour + 'hours' + minute + 'minutes' + second+'seconds'
 }
+</code></pre>
+<h3 id="2冒泡排序">2.冒泡排序</h3>
+<pre><code>var arr = [1, 3, 7, 12, 77, 6, 21]
+arr.sort(function (a, b) {
+    return a - b  //升序
+    return b - a  //降序
+})
 </code></pre>
 ]]></content>
     </entry>
@@ -1357,21 +1364,21 @@ button {
 </code></pre>
 <h3 id="2构造函数">2.构造函数</h3>
 <pre><code>function 函数名 -首字母大写- (a, b, c) {
-    this.属性1 = a;
-    this.属性2 = b;
-    this.属性3 = c;
+    this.属性1 = a
+    this.属性2 = b
+    this.属性3 = c
 }
 
-var 变量名 = new 函数名('参数1', 参数2, '参数3');
+var 变量名 = new 函数名('参数1', 参数2, '参数3')
 </code></pre>
 <h3 id="3遍历对象">3.遍历对象</h3>
 <pre><code>for (var k in 对象名) {
-    console.log(k);            //输出属性
-    console.log(对象名[k]);       // 输出参数
+    console.log(k)            //输出属性
+    console.log(对象名[k])       // 输出参数
 }
 </code></pre>
 <h3 id="4三元运算符">4.三元运算符</h3>
-<pre><code>条件 ? 表达式1(ture执行) : 表达式2(flase执行) ;
+<pre><code>条件 ? 表达式1(ture执行) : 表达式2(flase执行) 
 </code></pre>
 ]]></content>
     </entry>
